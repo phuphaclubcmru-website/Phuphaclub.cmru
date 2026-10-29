@@ -13,9 +13,9 @@ class AppConfig {
   static const String _serverUrl = String.fromEnvironment(
     'API_BASE_URL',
     defaultValue:
-        'https://cricket-sensitivity-tracy-driven.trycloudflare.com/phupha-club/web_code',
+        'https://expensive-gym-stuart-lbs.trycloudflare.com/phupha-club/web_code',
   );
-  static String get baseUrl => _serverUrl.replaceFirst(RegExp(r'/+$'), '');
+  static String get baseUrl => _serverUrl.trim().replaceFirst(RegExp(r'/+$'), '');
 
   static bool get isConfigured {
     final uri = Uri.tryParse(baseUrl);
@@ -31,6 +31,7 @@ class AppConfig {
   static String get uploadsUrl => '$baseUrl/uploads';
 
   // ฟังก์ชันช่วยสร้าง URL เต็มสำหรับรูปภาพ
+  static String get FullImageUrl => '$uploadsUrl/';
   static String getFullImageUrl(String? relativePath) {
     if (relativePath == null || relativePath.isEmpty) {
       return '';
