@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
+import '../constants/app_config.dart';
 import '../services/session_manager.dart';
 import '../services/api_service.dart';
 import 'main_navigation.dart';
@@ -35,6 +36,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   // ตรวจสอบสถานะและนำทางไปยังหน้าหลัก
   Future<void> _checkLoginStatus() async {
+    // ซิงค์ URL เซิร์ฟเวอร์ล่าสุดให้พร้อมใช้งาน
+    await AppConfig.init();
+
     final loggedIn = await SessionManager.isLoggedIn();
     if (loggedIn) {
       final response = await ApiService.getProfile();

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'constants/app_colors.dart';
+import 'constants/app_config.dart';
 import 'screens/splash_screen.dart';
 
 // main.dart
 // จุดเริ่มต้นการทำงานของแอพพลิเคชันชมรมเพื่อนภูผา (Phupha Club App)
 // มหาวิทยาลัยราชภัฏเชียงใหม่
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // โหลดแคชเดิมและซิงค์ลิงก์เซิร์ฟเวอร์อัตโนมัติจาก GitHub
+  await AppConfig.init();
   runApp(const PhuphaClubApp());
 }
 
