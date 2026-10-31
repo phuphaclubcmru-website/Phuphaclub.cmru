@@ -13,7 +13,7 @@ class AppConfig {
   static const String _serverUrl = String.fromEnvironment(
     'API_BASE_URL',
     defaultValue:
-        'https://expensive-gym-stuart-lbs.trycloudflare.com/phupha-club/web_code',
+        'https://caribbean-later-senior-vary.trycloudflare.com/phupha-club/web_code',
   );
   static String get baseUrl => _serverUrl.trim().replaceFirst(RegExp(r'/+$'), '');
 
