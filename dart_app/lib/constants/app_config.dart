@@ -25,7 +25,7 @@ class AppConfig {
 
   // GitHub API endpoint สำหรับอ่านลิงก์ล่าสุดแบบ Real-time (0 cache delay)
   static const String _syncEndpoint =
-      'https://api.github.com/repos/sarayootphamornwijit-yuth/phupha-web/contents/current_tunnel.txt';
+      'https://api.github.com/repos/phuphaclubcmru-website/Phuphaclub.cmru/contents/current_tunnel.txt';
 
   static String get baseUrl => _runtimeUrl.trim().replaceFirst(RegExp(r'/+$'), '');
 
