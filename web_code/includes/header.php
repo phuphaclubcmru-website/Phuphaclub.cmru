@@ -74,6 +74,15 @@ function committeeCanSee($menuName, $positionKey, $role) {
     <meta name="description" content="ระบบสารสนเทศเพื่อการบริหารจัดการชมรมเพื่อนภูผา มหาวิทยาลัยราชภัฏเชียงใหม่">
     <meta name="csrf-token" content="<?= htmlspecialchars(generateCsrfToken(), ENT_QUOTES, 'UTF-8') ?>">
     <title>ชมรมเพื่อนภูผา มหาวิทยาลัยราชภัฏเชียงใหม่</title>
+
+    <!-- iOS / PWA Fullscreen App Support (ซ่อนแถบ URL และแสดงไอคอนโลโก้ชมรมบน iPhone) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="ชมรมเพื่อนภูผา">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2E7D32">
+
     <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

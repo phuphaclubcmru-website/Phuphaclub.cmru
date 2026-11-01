@@ -1,0 +1,18 @@
+{
+  "name": "ชมรมเพื่อนภูผา มหาวิทยาลัยราชภัฏเชียงใหม่",
+  "short_name": "ชมรมเพื่อนภูผา",
+  "description": "ระบบสารสนเทศเพื่อการบริหารจัดการชมรมเพื่อนภูผา มหาวิทยาลัยราชภัฏเชียงใหม่",
+  "start_url": "index.php",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2E7D32",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
